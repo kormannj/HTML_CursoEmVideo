@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+    font-family: "FonteLogo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    background-color: #dddddd;
+    font-family: "Arial", sans-serif;
+}
+
+.interface {
+    width: 1130px;
+    box-sizing: border-box;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    padding: 10px;
+}
+
+.cabecalho h1 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.conteudo-principal {
+    display: block;
+    width: 633px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    /*box-sizing: border-box;
+    padding-bottom: 20px;*/
+}
+
+/*.conteudo-principal h1 {
+    background-color: #dddddd;
+    color: #606060;
+    text-indent: 5px;
+}*/
+
+#artigo-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px;
+}
+
+#cabecalho-artigo h1 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#cabecalho-artigo h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13pt;
+    background-color: #ffffff;
+    color: #cecece;
+    margin: 0px;
+}
+
+#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+#data-cabecalho {
+    text-align: right;
+}
+
+.conteudo-lateral {
+    display: block;
+    width: 434px;
+    box-sizing: border-box;
+    float: right;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    background-color: #dddddd;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.conteudo-lateral h1 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+.conteudo-lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+
+.rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+    /*padding: 20px 0;*/
+}
+
+.rodape p {
+    text-align: center;
+}
+
+.icone-glass {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu-principal ul {
+    list-style: none;
+    position: absolute;
+    text-transform: uppercase;
+    top: -20px;
+    right: 120px;
+}
+
+.imagem-menu {
+    position: absolute;
+    right: 80px;
+    top: 70px;
+}
+
+.menu-principal li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    font-weight: bold;
+    border-radius: 10px; /*bordas arredondadas*/
+    transition: background-color 1s;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-principal a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu-principal li:hover {
+    background-color: #606060;
+}
+
+.menu-principal h1 {
+    display: none;
+}
+
+.cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    /*Usei o background-image abaixo para testar, mas ao colocar no-repeat, some a imagem.*/
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+}
+
+.tabelaspec {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid #606060;
+}
+
+.tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+.col-esq {
+    background-color: #606060;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.col-dir {
+    background-color: #cecece;
+    text-align: left;
+    padding: 5px;
+}
+
+.tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+.tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 8px;
+}
+
+.foto-com-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+.foto-com-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+.foto-com-legenda figcaption {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*Definindo um efeito de sombreamento sobre a imagem*/
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 98.5%;
+    padding: 10px;
+    box-sizing: border-box; /*com isso a sombra fica dentro do border*/
+    /*A legenda some e será configurada para aparecer quando for passado o mouse sobre a imagem.*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.foto-com-legenda:hover figcaption {
+    opacity: 1;
+}
