@@ -1,14 +1,32 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Google Glass</title>
+        <link rel="icon" href="_imagens/glass-oculos-preto-peq.png"/>
+        <link rel="stylesheet" href="_css/estilo.css">
+    </head>
+    <script src="_javascript/funcoes.js"></script>
+    <body>
+        <div class="interface">
+            <header class="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
 
-[AQUI ENTRA UMA FOTO]
+                <img id="imagem-menu" class="imagem-menu" src="_imagens/multimidia.png" alt="Imagem do Google Glass">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+                <nav class="menu-principal">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('multimidia')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('multimidia')"><a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('multimidia')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('multimidia')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('multimidia')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +39,10 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+            <footer class="rodape">
+                <p>&copy; Copyright 2013 - by Gustavo Guanabara<br>
+                <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

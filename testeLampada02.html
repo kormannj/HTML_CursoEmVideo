@@ -4,22 +4,19 @@
         <title>Teste Javascript</title>
         <link rel="icon" href="_imagens/lampada-acesa.jpg"/>
         <script>
-            function mudaLampada(acao) {
-                if (acao == 'acende') {
-                    caminho = "_imagens/lampada-acesa.jpg";
+            var quebrada = false;
+            function mudaLampada(arquivo) {
+                if (!quebrada) {
+                    document.getElementById("lampada").src = "_imagens/lampada-" + arquivo + ".jpg";
+                    if (arquivo == "quebrada") {
+                        quebrada = true;
+                    }
                 }
-                if (acao == 'apaga') {
-                    caminho = "_imagens/lampada-apagada.jpg";
-                }
-                if (acao == 'quebra') {
-                    caminho = "_imagens/lampada-quebrada.jpg";
-                }
-                document.getElementById("lampada").src = caminho;
             }
         </script>
     </head>
     <body>
         <h1>Acenda a Lâmpada</h1>
-        <img id="lampada" src="_imagens/lampada-apagada.jpg" onmouseover="mudaLampada('acende')" onmouseout="mudaLampada('apaga')" onclick="mudaLampada('quebra')">
+        <img id="lampada" src="_imagens/lampada-apagada.jpg" onmouseover="mudaLampada('acesa')" onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')">
     </body>
 </html>
