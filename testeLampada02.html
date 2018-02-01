@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Teste Javascript</title>
+        <link rel="icon" href="_imagens/lampada-acesa.jpg"/>
+        <script>
+            function mudaLampada(acao) {
+                if (acao == 'acende') {
+                    caminho = "_imagens/lampada-acesa.jpg";
+                }
+                if (acao == 'apaga') {
+                    caminho = "_imagens/lampada-apagada.jpg";
+                }
+                if (acao == 'quebra') {
+                    caminho = "_imagens/lampada-quebrada.jpg";
+                }
+                document.getElementById("lampada").src = caminho;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Acenda a Lâmpada</h1>
+        <img id="lampada" src="_imagens/lampada-apagada.jpg" onmouseover="mudaLampada('acende')" onmouseout="mudaLampada('apaga')" onclick="mudaLampada('quebra')">
+    </body>
+</html>
